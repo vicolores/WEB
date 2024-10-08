@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Animación de Coche y Cohete</title>
+</head>
+<body>
+
+<svg width="800" height="400">
+    <!-- Línea de la carretera -->
+    <line x1="50" y1="150" x2="750" y2="150" stroke="black" stroke-width="3"/>
+    
+    <!-- Coche (cuerpo azul y ruedas negras) -->
+    <g id="coche">
+        <!-- Cuerpo del coche -->
+        <rect x="0" y="120" width="50" height="30" fill="blue"/>
+        <!-- Rueda izquierda -->
+        <circle cx="10" cy="160" r="7" fill="black"/>
+        <!-- Rueda derecha -->
+        <circle cx="40" cy="160" r="7" fill="black"/>
+    </g>
+
+    <!-- Animación del coche -->
+    <animateTransform xlink:href="#coche" attributeName="transform" type="translate" from="0 0" to="700 0" dur="5s" repeatCount="indefinite"/>
+    
+    <!-- Cohete -->
+    <g id="cohete">
+        <!-- Cuerpo del cohete -->
+        <rect x="600" y="300" width="20" height="60" fill="gray"/>
+        <!-- Punta del cohete -->
+        <polygon points="600,300 620,300 610,280" fill="red"/>
+        <!-- Llama del cohete -->
+        <circle cx="610" cy="365" r="5" fill="orange">
+            <animate attributeName="cy" from="365" to="380" dur="0.3s" repeatCount="indefinite"/>
+            <animate attributeName="r" from="5" to="10" dur="0.3s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+
+    <!-- Animación del cohete -->
+    <animateTransform xlink:href="#cohete" attributeName="transform" type="translate" from="0 0" to="0 -400" dur="4s" repeatCount="indefinite"/>
+</svg>
+
+</body>
+</html>
