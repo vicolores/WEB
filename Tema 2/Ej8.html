@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de definiciones</title>
+</head>
+<body>
+
+    <h1>Lista anidada usando listas de definiciones</h1>
+
+    <!-- Definimos una lista de definiciones con la etiqueta <dl> -->
+    <dl>
+        <!-- <dt> se usa para el término o título que se va a definir -->
+        <dt>1. HTTP es simple</dt>
+
+        <!-- Otro término de la lista de definiciones -->
+        <dt>2. Solicitudes entre cliente y servidor</dt>
+
+        <!-- <dd> contiene la definición o detalles del término anterior -->
+        <dd>
+            <!-- Lista de definiciones anidada dentro del término "Solicitudes entre cliente y servidor" -->
+            <dl>
+                <!-- Primer paso del proceso cliente-servidor -->
+                <dt>Paso 1</dt>
+                <!-- Detalle del paso 1 -->
+                <dd>El cliente manda una petición</dd>
+
+                <!-- Segundo paso del proceso cliente-servidor -->
+                <dt>Paso 2</dt>
+                <!-- Detalle del paso 2 -->
+                <dd>El servidor devuelve una respuesta</dd>
+            </dl>
+        </dd>
+
+        <!-- Tercer término de la lista: "¿Qué es HTML?" -->
+        <dt>3. ¿Qué es HTML?</dt>
+
+        <!-- Detalles o definiciones del término "¿Qué es HTML?" -->
+        <dd>
+            <!-- Lista de definiciones anidada para describir HTML -->
+            <dl>
+                <!-- Primer detalle de HTML -->
+                <dt>Es un lenguaje de marcas</dt>
+                <!-- Explicación de este detalle -->
+                <dd>Se usa para la elaboración de páginas web</dd>
+                <!-- Otro detalle de HTML -->
+                <dd>Es un estándar reconocido mundialmente</dd>
+                <!-- Subdefinición de los estándares de HTML -->
+                <dd>
+                    <!-- Definición adicional explicando quién define las normas de HTML -->
+                    <dl>
+                        <!-- El término relacionado a la W3C -->
+                        <dt>Sus normas vienen dadas por el World Wide Web Consortium o W3C</dt>
+                    </dl>
+                </dd>
+            </dl>
+        </dd>
+    </dl>
+
+</body>
+</html>
