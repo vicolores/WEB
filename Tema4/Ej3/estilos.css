@@ -1,0 +1,30 @@
+/* Enlace en su estado normal: color rojo y sin subrayado */
+a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Cuando el cursor del ratón está sobre el enlace: fondo rojo, texto blanco y subrayado */
+a:hover {
+    color: white;
+    background-color: red;
+    text-decoration: underline;
+}
+
+/* Cuando un enlace está activo: color naranja y sin subrayado */
+a:active {
+    color: orange;
+    text-decoration: none;
+}
+
+/* Cuando un enlace ha sido visitado: color verde oscuro y sin subrayado */
+a:visited {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+/* Cuando un enlace tiene el foco del teclado: color azul y subrayado */
+a:focus {
+    color: blue;
+    text-decoration: underline;
+}
