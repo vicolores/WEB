@@ -1,12 +1,3 @@
-/* Lista sin elemento gráfico */
-.sin-grafico {
-    list-style-type: none;
-}
-
-/* Lista con círculos */
-.con-circulos {
-    list-style-type: circle;
-}
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -16,42 +7,21 @@ body {
     margin: 0;
 }
 
-.bloque {
-    width: 400px;
-    height: 150px;
-    background-color: #8e2a9b;
-    /* Puedes cambiar este color a otro de tu elección */
-    border: 4px dotted #ff6347;
-    /* Color del borde y estilo con puntos */
-    margin: 50px;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.boton {
+    background-color: red;
+    color: white;
+    font-family: Helvetica, sans-serif;
     text-transform: uppercase;
-    /* Texto en mayúsculas */
-    font-size: 24px;
-    /* Tamaño del texto */
-    font-family: 'Helvetica', sans-serif;
-    /* Fuente del texto */
-    font-weight: bold;
-    /* Negrita para resaltar */
-    color: #000;
-    /* Color del texto */
-    text-align: center;
-    /* Centrado del texto */
-}
-/* Lista con cuadrados */
-.con-cuadrados {
-    list-style-type: square;
+    /* Convierte el texto a mayúsculas */
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Efecto suave al cambiar color */
 }
 
-/* Lista con números romanos */
-.con-numeros-romanos {
-    list-style-type: upper-roman;
-}
-
-/* Lista con letras griegas */
-.con-letras-griegas {
-    list-style-type: lower-greek;
+.boton:hover {
+    background-color: green;
+    /* Cambia el fondo a verde al pasar el ratón */
 }

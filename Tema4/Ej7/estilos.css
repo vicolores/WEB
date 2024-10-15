@@ -9,68 +9,93 @@ body {
 .bloque {
     position: absolute;
     border: 2px solid black;
-    padding: 10px;
-    color: white;
-    text-align: center;
+    color: rgb(0, 0, 0);
 }
 
 .bloque1 {
-    background-color: lightblue;
+    background-color: rgba(255, 255, 255, 0.685);
     width: 500px;
     height: 100px;
-    top: 50px;
-    left: 150px;
+    top: 200px;
+    left: 70px;
     z-index: 80;
+    padding-left: 10px;
+    /* Alineado a la izquierda */
+    display: flex;
+    align-items: flex-start;
+    /* Alineado arriba */
 }
 
 .bloque2 {
-    background-color: lightgreen;
-    width: 450px;
-    height: 300px;
+    background-color: rgba(144, 238, 144, 0.74);
+    width: 400px;
+    height: 500px;
     top: 130px;
     left: 120px;
     z-index: 40;
+    position: relative;
+    padding-left: 10px;
+    /* Alineado a la izquierda */
 }
 
 .bloque3 {
-    background-color: yellow;
-    width: 400px;
-    height: 200px;
-    top: 350px;
-    left: 170px;
+    background-color: rgba(255, 200, 128, 0.582);
+    width: 500px;
+    height: 100px;
+    top: 600px;
+    left: 60px;
     z-index: 20;
+    display: flex;
+    align-items: flex-end;
+    /* Alineado abajo */
+    padding-left: 10px;
+    /* Alineado a la izquierda */
 }
 
 .hijo {
     position: absolute;
-    padding: 10px;
     border: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
 .hijo1 {
-    background-color: blue;
-    width: 200px;
+    background-color: rgba(52, 156, 224, 0.911);
+    width: 350px;
     height: 60px;
-    top: 20px;
-    left: 100px;
+    top: 180px;
+    left: 20px;
     z-index: 90;
+    padding-left: 10px;
+    /* Alineado a la izquierda */
+    display: flex;
+    align-items: flex-start;
+    /* Alineado arriba */
 }
 
 .hijo2 {
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.685);
     width: 180px;
-    height: 50px;
-    top: 120px;
-    left: 130px;
+    height: 380px;
+    top: 50px;
+    left: 170px;
     z-index: 30;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* Alineado abajo y a la derecha */
+    padding-right: 10px;
 }
 
 .hijo3 {
-    background-color: pink;
-    width: 150px;
+    background-color: rgba(255, 192, 203, 0.808);
+    width: 200px;
     height: 80px;
-    top: 40px;
-    left: 100px;
+    top: 410px;
+    left: 160px;
     z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* Alineado abajo y a la derecha */
+    padding-right: 10px;
 }
