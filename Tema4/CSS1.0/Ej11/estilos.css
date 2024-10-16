@@ -1,0 +1,61 @@
+html {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.catalogo {
+    border: 2px solid black;
+    /* Borde exterior negro */
+    padding: 20px;
+    text-align: center;
+    max-width: 900px;
+    background-color: white;
+}
+
+h3 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-spacing: 20px;
+    /* Espaciado entre las celdas */
+}
+
+th {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+td {
+    text-align: center;
+}
+
+td img {
+    width: 250px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    /* Borde alrededor de las imágenes */
+    padding: 5px;
+    background-color: white;
+    /* Fondo blanco para resaltar las imágenes */
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 16px;
+}

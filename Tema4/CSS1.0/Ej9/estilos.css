@@ -1,0 +1,42 @@
+html {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.card {
+    box-shadow: 0 0 4px 4px lightgray;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.titulo {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+.body {
+    font-style: italic;
+    text-align: justify;
+    padding: 8px;
+}
+
+.foot {
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
