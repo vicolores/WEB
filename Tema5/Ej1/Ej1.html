@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Word Wrap</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .title {
+            width: 120px;
+            padding: 10px 0;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .title-normal {
+            background-color: #00A1FF;
+        }
+
+        .title-break {
+            background-color: #4CAF50;
+        }
+
+        .box {
+            width: 120px;
+            padding: 15px;
+            background-color: #bbb;
+            border-radius: 5px;
+            color: #333;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .box-normal {
+            word-wrap: normal;
+        }
+
+        .box-break {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="title title-normal">
+                word-wrap:<br>normal
+            </div>
+            <div class="box box-normal">
+                Texto de ejemplo para word-wrap:<br>
+                textomuymuymuymuylargo
+            </div>
+        </div>
+        <div class="column">
+            <div class="title title-break">
+                word-wrap:<br>break-word
+            </div>
+            <div class="box box-break">
+                Texto de ejemplo para word-wrap:<br>
+                textomuymuymuymuylargo
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

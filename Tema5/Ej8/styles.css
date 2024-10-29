@@ -1,0 +1,44 @@
+/* Estilo para el cuadrado y la transición al círculo */
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    /* Azul */
+    transition: all 1s ease;
+    /* Transición suave de 1 segundo */
+    margin: 20px;
+}
+
+/* Cambiar al pasar el ratón: de cuadrado a círculo */
+.square:hover {
+    border-radius: 50%;
+}
+
+/* Estilo para el título y la transición */
+.title {
+    font-size: 24px;
+    text-transform: none;
+    /* Sin mayúsculas */
+    text-shadow: none;
+    /* Sin sombra */
+    font-family: Arial, sans-serif;
+    /* Tipo de letra por defecto */
+    color: black;
+    transition: all 1s ease;
+    /* Transición suave de 1 segundo */
+    margin: 20px;
+}
+
+/* Cambiar al pasar el ratón: cambiar tamaño, mayúsculas, sombra, subrayado, tipo de letra */
+.title:hover {
+    font-size: 40px;
+    text-transform: uppercase;
+    /* Todas las letras en mayúsculas */
+    text-shadow: 3px 3px 5px red;
+    /* Sombra de color rojo */
+    text-decoration: underline;
+    /* Subrayado */
+    font-family: Impact, sans-serif;
+    /* Tipo de letra Impact */
+    color: red;
+}

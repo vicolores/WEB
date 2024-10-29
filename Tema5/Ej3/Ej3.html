@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Botones con CSS</title>
+    <style>
+        /* Estilos generales para centrar los botones */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Botón Redondo con icono */
+        .button-round {
+            width: 60px;
+            height: 60px;
+            background-color: #FF6F61;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Botón Verde con texto centrado */
+        .button-green {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border-radius: 20px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ccc;
+        }
+
+        /* Botón Rojo con forma irregular */
+        .button-red {
+            padding: 30px 30px;
+            background-color: red;
+            color: black;
+            font-size: 8px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 50% 20% / 20% 20%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ccc;
+        }
+
+        /* Contenedor de cada botón para dar marco */
+        .button-container {
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button-container">
+        <div class="button-round">+</div>
+    </div>
+    <div class="button-container">
+        <div class="button-green">Haz clic aquí</div>
+    </div>
+    <div class="button-container">
+        <div class="button-red">Haz clic aquí</div>
+    </div>
+</body>
+
+</html>

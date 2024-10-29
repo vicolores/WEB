@@ -3,7 +3,7 @@ body {
     font-family: Verdana, sans-serif;
     color: #192666;
     background-color: #F2F5FE;
-    background-image: url('fondo.gif');
+    background-image: url('imagenes/fondo.gif');
     background-repeat: repeat;
     margin: 0;
     padding: 0;
@@ -18,13 +18,13 @@ body {
 
 header {
     height: 100px;
-    background-image: url('cabecera.jpg');
+    background-image: url('imagenes/cabecera.jpg');
     background-size: cover;
 }
 
 footer {
     height: 50px;
-    background-image: url('fondo_pie.jpg');
+    background-image: url('imagenes/fondo_pie.jpg');
     background-repeat: repeat-x;
 }
 
@@ -54,14 +54,14 @@ nav a.selected {
 .sidebar {
     width: 200px;
     float: right;
-    background-image: url('fondo_columna.gif');
+    background-image: url('imagenes/fondo_columna.gif');
     padding: 10px;
 }
 
 .sidebar .profile img {
     width: 100px;
     height: 100px;
-    background-image: url('mifoto.gif');
+    background-image: url('imagenes/mifoto.gif');
 }
 
 .sidebar .categories, .sidebar .archive, .sidebar .links {
@@ -89,7 +89,7 @@ nav a.selected {
 }
 
 .article {
-    background-image: url('fondo_articulo.jpg');
+    background-image: url('imagenes/fondo_articulo.jpg');
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -114,15 +114,15 @@ nav a.selected {
 
 /* Iconos de meta información */
 .meta .date img {
-    content: url('icono_fecha.gif');
+    content: url('imagenes/icono_fecha.gif');
 }
 
 .meta .author img {
-    content: url('icono_autor.gif');
+    content: url('imagenes/icono_autor.gif');
 }
 
 .meta .comments img {
-    content: url('icono_comentarios.gif');
+    content: url('imagenes/icono_comentarios.gif');
 }
 
 /* Enlaces dentro del artículo */

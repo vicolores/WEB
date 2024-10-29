@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Sombras con CSS</title>
+    <style>
+        /* Estilos generales para centrar los elementos */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Primer cuadro con sombras escalonadas hacia arriba */
+        .box-stacked {
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            border: 2px solid blue;
+            box-shadow:
+                5px -5px 0px 0px rgba(255, 0, 0, 0.459),
+                10px -10px 0px 0px rgba(255, 166, 0, 0.356),
+                15px -15px 0px 0px rgba(255, 255, 0, 0.425),
+                20px -20px 0px 0px rgba(0, 128, 0, 0.356),
+                25px -25px 0px 0px rgba(0, 0, 255, 0.342);
+        }
+
+        /* Segundo cuadro con sombras apiladas en el mismo lugar */
+        .box-layered {
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            border: 2px solid blue;
+            box-shadow:
+                0px 0px 0px 2px red,
+                0px 0px 0px 4px orange,
+                0px 0px 0px 6px yellow,
+                0px 0px 0px 8px green,
+                0px 0px 0px 10px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-stacked"></div>
+    <div class="box-layered"></div>
+</body>
+
+</html>

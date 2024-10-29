@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de Cine Coromines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .titulo-cartelera {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            margin-bottom: 30px;
+            background-color: #003366;
+            padding: 15px;
+            border: 4px solid #0000ff;
+            display: inline-block;
+        }
+
+        .cartelera {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .pelicula {
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .poster {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .titulo {
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            background: linear-gradient(to right, #ff5f5f, #ffba00);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .detalle {
+            padding: 15px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="titulo-cartelera">CARTELERA DE CINE<br>COROMINES</div>
+    <div class="cartelera">
+        <div class="pelicula">
+            <img class="poster" src="https://via.placeholder.com/300x400" alt="Pelicula 1">
+            <div class="titulo">Pelicula 1: La Gran Aventura</div>
+            <div class="detalle">Una emocionante historia de aventuras y misterio.</div>
+        </div>
+        <div class="pelicula">
+            <img class="poster" src="https://via.placeholder.com/300x400" alt="Pelicula 2">
+            <div class="titulo">Pelicula 2: Misterios del Futuro</div>
+            <div class="detalle">Un drama de ciencia ficción lleno de sorpresas.</div>
+        </div>
+        <div class="pelicula">
+            <img class="poster" src="https://via.placeholder.com/300x400" alt="Pelicula 3">
+            <div class="titulo">Pelicula 3: Amor Infinito</div>
+            <div class="detalle">Una conmovedora historia de amor y esperanza.</div>
+        </div>
+        <div class="pelicula">
+            <img class="poster" src="https://via.placeholder.com/300x400" alt="Pelicula 4">
+            <div class="titulo">Pelicula 4: La Batalla Final</div>
+            <div class="detalle">Acción sin parar en una lucha épica por la supervivencia.</div>
+        </div>
+        <div class="pelicula">
+            <img class="poster" src="https://via.placeholder.com/300x400" alt="Pelicula 5">
+            <div class="titulo">Pelicula 5: Magia Oculta</div>
+            <div class="detalle">Un viaje mágico lleno de hechizos y criaturas míticas.</div>
+        </div>
+        <div class="pelicula">
+            <img class="poster" src="https://via.placeholder.com/300x400" alt="Pelicula 6">
+            <div class="titulo">Pelicula 6: Risas Sin Fin</div>
+            <div class="detalle">Una comedia que te hará reír hasta el final.</div>
+        </div>
+    </div>
+</body>
+
+</html>

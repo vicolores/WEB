@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degradados con Texto</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 0;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .gradient-box {
+            width: 600px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Primer degradado: Día de verano */
+        .summer-day {
+            background: linear-gradient(to right, #ff5f5f, #ffba00, #ffeb3b);
+        }
+
+        /* Segundo degradado: Piña */
+        .pineapple {
+            background: linear-gradient(to right, #678b6e, #d3a86a);
+            color: #f9f9f9;
+            /* Un color más claro para un buen contraste */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient-box summer-day">Día de verano</div>
+    <div class="gradient-box pineapple">Piña</div>
+</body>
+
+</html>
