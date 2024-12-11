@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.flex-container div {
+    background-color: rgba(123, 198, 199, 0.8);
+    text-align: center;
+    color: black;
+    padding: 10px 15px;
+    flex: 1; /* Hace que cada elemento ocupe un ancho igual */
+}
