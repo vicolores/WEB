@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #6ECFF6; /* Color celeste para el sidebar */
+  flex: 1; /* Relación de anchos 1 */
+  padding: 12px 24px; /* Padding vertical y lateral */
+  border-right: 1px solid #ddd;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.content {
+  background-color: #B6D7C8; /* Color verde claro para el contenido principal */
+  flex: 4; /* Relación de anchos 4 */
+  padding: 12px 24px; /* Padding vertical y lateral */
+}

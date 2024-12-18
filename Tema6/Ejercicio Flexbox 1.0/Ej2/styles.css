@@ -1,0 +1,18 @@
+body {
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna (verticalmente) */
+    gap: 10px; /* Espacio entre elementos */
+    align-items: flex-start; /* Opcional: Alinea los elementos al inicio del contenedor */
+}
+
+.flex-container div {
+    background-color: rgba(123, 198, 199, 0.8);
+    text-align: center;
+    color: black;
+    padding: 10px 15px;
+    width: 100px;
+}

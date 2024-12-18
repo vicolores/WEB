@@ -1,0 +1,27 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Distribuye espacio entre los bloques */
+    align-items: stretch; /* Igual altura para los bloques */
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+/* Bloques individuales */
+.bloque {
+    background-color: rgba(123, 198, 199, 0.8);
+    color: black;
+    flex: 1; /* Los bloques crecen o se contraen para ocupar el mismo espacio */
+    margin: 2px; /* Espacio entre columnas */
+    padding: 10px;
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+    text-align: left;
+}

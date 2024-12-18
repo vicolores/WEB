@@ -1,0 +1,28 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal usando flexbox */
+.contenedor {
+  display: flex;
+  gap: 2px; /* Espacio entre los bloques */
+  height: 100vh; /* Altura al 100% del viewport */
+}
+
+/* Sidebar (barra lateral) */
+.sidebar {
+  background-color: #6ECFF6; /* Color celeste para el sidebar */
+  flex: 1; /* Relación de anchos 1 */
+  padding: 12px 24px; /* Padding vertical y lateral */
+}
+
+/* Contenido principal */
+.contenido {
+  background-color: #B6D7C8; /* Color verde claro para el contenido principal */
+  flex: 4; /* Relación de anchos 4 */
+  padding: 12px 24px; /* Padding vertical y lateral */
+}

@@ -1,0 +1,35 @@
+body {
+  margin: 0; /* Elimina los márgenes predeterminados del body */
+  font-family: sans-serif; /* Fuente más legible */
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column; /* Los elementos se apilan verticalmente */
+  min-height: 100vh; /* Asegura que el contenedor ocupa toda la altura de la pantalla */
+}
+
+.cabecera {
+  background-color: #DAA520; /* Color ocre/dorado */
+  text-align: center;
+}
+
+.cuerpo {
+  display: flex;
+  flex-grow: 1; /* Permite que el cuerpo se expanda para ocupar el espacio disponible */
+}
+
+.lateral {
+  background-color: #363636; /* Gris oscuro */
+  width: 100px; /* Ancho fijo para los laterales. Ajusta según necesites */
+  padding: 20px;
+  color: white; /* Texto blanco para mejor contraste */
+  text-align: center;
+}
+
+.central {
+  background-color: white;
+  flex-grow: 1; /* El contenido central se expande para ocupar el espacio restante */
+  padding: 20px;
+  text-align: center;
+}
