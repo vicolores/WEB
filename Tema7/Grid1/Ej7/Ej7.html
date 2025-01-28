@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-areas:
+          ".  celda1 celda1"
+          "celda2 celda3 celda3"
+          "celda4 celda4 celda4";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        /*border: 1px solid black;*/
+        padding: 10px;
+
+        gap: 1px;
+      }
+
+      .container > div:not(.celda3) { /* Todos menos celda3 */
+        /*background-color: #f1f1f1;*/
+        /*border: 1px solid black;*/
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .celda1 {
+        grid-area: celda1;
+        background-color: rgb(255, 136, 0);
+      }
+
+      .celda2 {
+        grid-area: celda2;
+        background-color: #6f85ad;
+      }
+
+      .celda3 {
+        grid-area: celda3;
+        padding: 10px;
+        font-size: 20px;
+        text-align: left;
+        /*border: 1px solid black;*/
+        background-color: #6f85ad;
+      }
+
+      .celda4 {
+        grid-area: celda4;
+        background-color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="celda1">celda 1</div>
+      <div class="celda2">celda 2</div>
+      <div class="celda3">celda 3:<br />
+        contenido que marca el alto de la parte central de la página
+      </div>
+      <div class="celda4">celda 4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Grid</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 1px;
+            width: auto;
+            margin: auto;
+        }
+
+        .contenedor div {
+            background-color: #5a6872;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .cabecera {
+            grid-column: span 3;
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="contenedor">
+      <div class="cabecera">celda 1</div>
+      <div>celda 2</div>
+      <div>celda 3</div>
+      <div>celda 4</div>
+      <div>celda 5</div>
+      <div>celda 6</div>
+      <div>celda 7</div>
+    </div>
+
+  </body>
+</html>

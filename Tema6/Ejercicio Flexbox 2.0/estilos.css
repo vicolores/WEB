@@ -15,46 +15,49 @@ body {
 	max-width: 1200px;
 	margin: auto;
 	padding: 40px 0;
-
-	
-}
-
-.titulo {
-	font-size: 24px;
-	padding: 20px 0;
+	display: flex;
+	gap: 20px;
+	align-items: flex-start; /* Evita que los hijos se estiren */
 }
 
 .contenedor-conciertos {
-	
+	flex: 3; /* Nueva relación 3:1 para el ancho */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
 .card {
 	border-radius: 10px;
-	min-height: 200px;
+	height: 200px; /* Altura fija para tarjetas */
+	flex: 1 1 calc(33.333% - 20px); /* 3 columnas */
 	font-weight: bold;
 	padding: 20px;
 	position: relative;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
-
-	
-}
-
-.card .textos {
-	height: 100%;
-	
-	
 }
 
 .banner {
+	flex: 1; /* Mismo ancho que una tarjeta individual */
+	height: 420px; /* Doble altura (200x2 + gap) */
 	border-radius: 10px;
 	text-align: center;
 	padding: 20px;
 	background-size: cover;
 	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
-
+/* Resto del CSS se mantiene igual */
+.card .textos {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .banner ul {
@@ -79,4 +82,3 @@ body {
 	font-family: 'Roboto', sans-serif;
 	cursor: pointer;
 }
-

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Grid</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: 100px 150px 150px;
+            grid-template-rows: auto;
+            gap: 1px;
+            width: 402px; /* Suma de las columnas más el gap */
+            margin: auto;
+        }
+
+        .contenedor div {
+            background-color: #5a6872;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .cabecera {
+            grid-column: span 3; /* La celda 1 ocupa las tres columnas */
+        }
+
+        .sidebar {
+            grid-row: span 2; /* La celda 2 ocupa dos filas */
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="contenedor">
+      <div class="cabecera">celda 1</div>
+      <div class="sidebar">celda 2</div>
+      <div>celda 3</div>
+      <div>celda 4</div>
+      <div>celda 5</div>
+      <div>celda 6</div>
+    </div>
+
+  </body>
+</html>
