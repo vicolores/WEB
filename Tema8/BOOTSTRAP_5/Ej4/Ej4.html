@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+  <meta charset="UTF-8">
+  <!-- Asegura la correcta visualización en móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .row {
+    /* Se crea una clase para efectos visuales en la fila sin aplicar padding */
+    .custom-row {
       margin-bottom: 10px;
       border: 2px dashed #007bff;
-      padding: 10px;
+      /* Se evita el padding para no interferir con los márgenes negativos de .row */
     }
 
-    .col,
-    [class^="col-"] {
+    /* Se aplica el padding en las columnas */
+    .custom-col {
       background-color: #f8f9fa;
       border: 2px solid #dc3545;
       padding: 10px;
@@ -22,35 +25,46 @@
     }
   </style>
 </head>
-
 <body>
   <div class="container mt-4">
+
+    <!-- Sección de ejemplo con filas responsive -->
     <section>
-      <h4>Tamaño extra small</h4>
-      <div class="row">
-        <div class="col-12">1</div>
+      <h4>Ejemplo Responsive</h4>
+
+      <!-- Fila 1: Una sola columna que siempre ocupa todo el ancho -->
+      <div class="row custom-row">
+        <div class="col-12 custom-col">Columna 1</div>
       </div>
-      <div class="row">
-        <div class="col-8">1</div>
+
+      <!-- Fila 2: En pantallas pequeñas ocupa todo el ancho, y en medianas/altas se usa 8 columnas -->
+      <div class="row custom-row">
+        <div class="col-12 col-md-8 custom-col">Columna 2</div>
       </div>
-      <div class="row">
-        <div class="col-3 offset-9">1</div>
+
+      <!-- Fila 3: Con offset en pantallas medianas -->
+      <div class="row custom-row">
+        <div class="col-12 col-md-3 offset-md-9 custom-col">Columna 3</div>
       </div>
     </section>
 
+    <!-- Sección usando breakpoints para tamaños grandes -->
     <section>
-      <h4>Tamaño grande</h4>
-      <div class="row">
-        <div class="col-5 offset-7">1</div>
+      <h4>Tamaño grande con Offsets</h4>
+
+      <!-- En pantallas pequeñas la columna ocupa todo el ancho, en grandes se respeta el tamaño definido -->
+      <div class="row custom-row">
+        <div class="col-12 col-lg-5 offset-lg-7 custom-col">Columna 1</div>
       </div>
-      <div class="row">
-        <div class="col-8 offset-2">1</div>
+
+      <div class="row custom-row">
+        <div class="col-12 col-lg-8 offset-lg-2 custom-col">Columna 2</div>
       </div>
-      <div class="row">
-        <div class="col-3">1</div>
+
+      <div class="row custom-row">
+        <div class="col-12 col-lg-3 custom-col">Columna 3</div>
       </div>
     </section>
   </div>
 </body>
-
 </html>
