@@ -1,52 +1,32 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Menú Horizontal con Flexbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .menu {
+       .flex-container{
             display: flex;
-            background-color: rgba(123, 198, 199, 0.8);
-            list-style-type: none;
+            justify-content: space-between;
             font-family: sans-serif;
             gap: 10px;
-            margin: 0;
-            padding: 0;
-            width: 100%;
+        }
+        .flex-container > li  {
+            background-color: rgba(123,198,199,0.8);
+            width: 300px;
+            padding-left: 0px;
+            display: flex;
         }
 
-        .menu li {
-            flex-grow: 1;
-            text-align: center;
-        }
-
-        .menu a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 15px;
-            transition: background-color 0.3s ease;
-        }
-
-        .menu a:hover {
-            background-color: rgba(100, 170, 171, 0.8);
-        }
-    </style>
+ </style>
 </head>
-<body>
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+    <ul class="flex-container">
+        <li><a href="">Home</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="">Planes</a></li>
+        <li><a href="">Constactos</a></li>
+        <li><a href="">Opciones</a></li>
+    </ul>
 </body>
 </html>

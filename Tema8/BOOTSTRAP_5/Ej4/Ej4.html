@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .row {
+      margin-bottom: 10px;
+      border: 2px dashed #007bff;
+      padding: 10px;
+    }
+
+    .col,
+    [class^="col-"] {
+      background-color: #f8f9fa;
+      border: 2px solid #dc3545;
+      padding: 10px;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <section>
+      <h4>Tamaño extra small</h4>
+      <div class="row">
+        <div class="col-12">1</div>
+      </div>
+      <div class="row">
+        <div class="col-8">1</div>
+      </div>
+      <div class="row">
+        <div class="col-3 offset-9">1</div>
+      </div>
+    </section>
+
+    <section>
+      <h4>Tamaño grande</h4>
+      <div class="row">
+        <div class="col-5 offset-7">1</div>
+      </div>
+      <div class="row">
+        <div class="col-8 offset-2">1</div>
+      </div>
+      <div class="row">
+        <div class="col-3">1</div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
